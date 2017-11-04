@@ -1,6 +1,6 @@
 {% set name = "micromagneticmodel" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "73fb5b0c8f29c30ea92e8ef721806627a03e187e218881eddd127aff2a503954" %}
+{% set version = "0.7.6" %}
+{% set sha256 = "11b677d6569e222d8828285c4f48863fc27cc1091fd69a5b441a93546bdc3e2a" %}
 
 package:
   name: {{ name|lower }}
@@ -59,7 +59,7 @@ about:
 extra:
   recipe-maintainers:
     - fangohr
-    - mb1a15
+    - marijanbeg
     - takluyver
     - davidcortesortuno
     - rpep

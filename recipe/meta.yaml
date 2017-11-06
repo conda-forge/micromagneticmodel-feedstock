@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [py27]
-  number: 0
+  number: 1
   script: pip install --no-deps .
 
 requirements:
@@ -35,7 +35,7 @@ test:
     - micromagneticmodel.hamiltonian
 
   commands:
-    - python -c "import micromagneticmodel; micromagneticmodel.test()"
+    - python -c "import sys; import micromagneticmodel as m; sys.exit(m.test())"
 
 
 about:

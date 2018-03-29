@@ -1,6 +1,6 @@
 {% set name = "micromagneticmodel" %}
-{% set version = "0.7.6" %}
-{% set sha256 = "11b677d6569e222d8828285c4f48863fc27cc1091fd69a5b441a93546bdc3e2a" %}
+{% set version = "0.8" %}
+{% set sha256 = "97da46a53f3d40aa81f6f11c3d75bbb5f4b303734120fe96e8055e93f9800bef" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [py27]
-  number: 1
+  number: 0
   script: pip install --no-deps .
 
 requirements:

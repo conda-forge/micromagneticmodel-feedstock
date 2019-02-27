@@ -13,12 +13,12 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: pip install --no-deps .
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - pip
   run:
     - python >=3.6
@@ -61,5 +61,5 @@ extra:
     - marijanbeg
     - fangohr
     - takluyver
-    - davidcortesortuno
     - rpep
+    - davidcortesortuno

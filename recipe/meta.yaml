@@ -7,14 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
   number: 0
-  script: pip install --no-deps .
+  script: pip install --no-deps . -vvv
 
 requirements:
   build:
@@ -23,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - discretisedfield
-    - joommfutil
+    - ubermagutil
     - pytest
 
 test:
@@ -35,26 +34,23 @@ test:
     - micromagneticmodel.hamiltonian
 
   commands:
-    - python -c "import sys; import micromagneticmodel as m; sys.exit(m.test())"
-
+    - python -c "import sys; import micromagneticmodel as mm; sys.exit(mm.test())"
 
 about:
-  home: http://joommf.github.io/
-  license: BSD 3-clause
-  summary: A Python-based micromagnetic model
+  home: http://ubermag.github.io/
+  license: BSD-3-clause
+  summary: Python domain-specific language for defining micromagnetic models.
   license_family: BSD
   license_file: LICENSE
 
   description: |
-    The micromagneticmodel is a representation of the physics of a
-    micromagnetic problem in Python. It does not carry out any
-    calculation. However, other packages derive from this abstract
-    class and provide 'micromagnetic calculators'. For example the
-    'oommfc' package is a micromagnetic calculator (OOMMFCalculator)
-    based on the micromagneticmodel provided here, and uses OOMMF to
-    carry out any actual numerical calculation.
+    `micromagneticmodel` is a Python package that provides:
+
+        - Domain-specific language for defining micromagnetic model.
+
+    It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
   doc_url: http://micromagneticmodel.readthedocs.io
-  dev_url: https://github.com/joommf/micromagneticmodel
+  dev_url: https://github.com/ubermag/micromagneticmodel
 
 extra:
   recipe-maintainers:

@@ -46,7 +46,7 @@ about:
   description: |
     `micromagneticmodel` is a Python package that provides:
 
-        - Domain-specific language for defining micromagnetic model.
+    - Domain-specific language for defining micromagnetic model.
 
     It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
   doc_url: http://micromagneticmodel.readthedocs.io

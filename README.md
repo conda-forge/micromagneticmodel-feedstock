@@ -1,21 +1,19 @@
 About micromagneticmodel
 ========================
 
-Home: http://joommf.github.io/
+Home: http://ubermag.github.io/
 
-Package license: BSD 3-clause
+Package license: BSD-3-clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: A Python-based micromagnetic model
+Summary: Python domain-specific language for defining micromagnetic models.
 
-The micromagneticmodel is a representation of the physics of a
-micromagnetic problem in Python. It does not carry out any
-calculation. However, other packages derive from this abstract
-class and provide 'micromagnetic calculators'. For example the
-'oommfc' package is a micromagnetic calculator (OOMMFCalculator)
-based on the micromagneticmodel provided here, and uses OOMMF to
-carry out any actual numerical calculation.
+`micromagneticmodel` is a Python package that provides:
+
+- Domain-specific language for defining micromagnetic model.
+
+It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
 
 
 Current build status
@@ -123,9 +121,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@davidcortesortuno](https://github.com/davidcortesortuno/)
 * [@fangohr](https://github.com/fangohr/)
 * [@marijanbeg](https://github.com/marijanbeg/)
-* [@rpep](https://github.com/rpep/)
 * [@takluyver](https://github.com/takluyver/)
 

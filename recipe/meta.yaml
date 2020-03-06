@@ -1,6 +1,6 @@
 {% set name = "micromagneticmodel" %}
-{% set version = "0.8.12" %}
-{% set sha256 = "26f1fe03b54adf2e80239f8e4336d29456b3a057c0b95434be7dd2176e974184" %}
+{% set version = "0.8.14" %}
+{% set sha256 = "46488c9e2d7485457004815359a8d5bdb02e2e0a6e8d5cebf6c75f98d2da3122" %}
 
 package:
   name: {{ name|lower }}

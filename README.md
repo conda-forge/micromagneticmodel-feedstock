@@ -10,10 +10,7 @@ Feedstock license: BSD 3-Clause
 Summary: Python domain-specific language for defining micromagnetic models.
 
 `micromagneticmodel` is a Python package that provides:
-
-- Domain-specific language for defining micromagnetic model.
-
-It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
+  - Domain-specific language for defining micromagnetic models.
 
 
 Current build status
@@ -123,5 +120,4 @@ Feedstock Maintainers
 
 * [@fangohr](https://github.com/fangohr/)
 * [@marijanbeg](https://github.com/marijanbeg/)
-* [@takluyver](https://github.com/takluyver/)
 

@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: pip install --no-deps . -vvv
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
@@ -22,33 +22,20 @@ requirements:
   run:
     - python >=3.6
     - discretisedfield
-    - ubermagutil
     - pytest
 
 test:
   imports:
     - micromagneticmodel
-    - micromagneticmodel.tests
-    - micromagneticmodel.drivers
-    - micromagneticmodel.dynamics
-    - micromagneticmodel.hamiltonian
-
   commands:
     - python -c "import sys; import micromagneticmodel as mm; sys.exit(mm.test())"
 
 about:
   home: http://ubermag.github.io/
-  license: BSD-3-clause
-  summary: Python domain-specific language for defining micromagnetic models.
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-
-  description: |
-    `micromagneticmodel` is a Python package that provides:
-
-    - Domain-specific language for defining micromagnetic model.
-
-    It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
+  summary: 'Python domain-specific language for defining micromagnetic models.'
   doc_url: http://micromagneticmodel.readthedocs.io
   dev_url: https://github.com/ubermag/micromagneticmodel
 
@@ -56,4 +43,3 @@ extra:
   recipe-maintainers:
     - marijanbeg
     - fangohr
-    - takluyver

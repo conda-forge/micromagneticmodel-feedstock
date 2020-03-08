@@ -1,6 +1,6 @@
 {% set name = "micromagneticmodel" %}
-{% set version = "0.8.14" %}
-{% set sha256 = "46488c9e2d7485457004815359a8d5bdb02e2e0a6e8d5cebf6c75f98d2da3122" %}
+{% set version = "0.8.15" %}
+{% set sha256 = "3ea8fc7da4bdd0a5eca2c9cb6931d517c0a0b843f65098fa575d17fa41bc3a73" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -35,7 +35,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Python domain-specific language for defining micromagnetic models.'
+  summary: Python domain-specific language for defining micromagnetic models.
   doc_url: http://micromagneticmodel.readthedocs.io
   dev_url: https://github.com/ubermag/micromagneticmodel
 

@@ -1,6 +1,6 @@
 {% set name = "micromagneticmodel" %}
-{% set version = "0.8.19" %}
-{% set sha256 = "c0fd0b2f943d5e568168aa8039fbcd71434a580a0c483f9ca57168bc554eb87f" %}
+{% set version = "0.8.20" %}
+{% set sha256 = "691d6311ad86dee5396c78efbf35ab0518e0b7728ecb0a58a46dafe4f3be4ce4" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - discretisedfield ==0.8.12
+    - discretisedfield ==0.8.13
 
 test:
   imports:

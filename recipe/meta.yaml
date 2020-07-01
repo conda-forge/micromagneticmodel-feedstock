@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - discretisedfield ==0.8.18
+    - discretisedfield ==0.8.13
 
 test:
   imports:

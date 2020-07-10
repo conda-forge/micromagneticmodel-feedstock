@@ -5,7 +5,7 @@ Home: http://ubermag.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python domain-specific language for defining micromagnetic models.
 

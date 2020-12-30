@@ -1,6 +1,6 @@
 {% set name = "micromagneticmodel" %}
-{% set version = "0.8.21" %}
-{% set sha256 = "657282d34cacb99f2ea56ae661837029e0af501dc15bec93e30843a80a564b7e" %}
+{% set version = "0.8.22" %}
+{% set sha256 = "6fb2bf6321188d6ba32c645dde589d6caec7caf42f640d5c698c7c76f6205b96" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
   run:

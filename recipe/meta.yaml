@@ -1,6 +1,5 @@
 {% set name = "micromagneticmodel" %}
-{% set version = "0.8.21" %}
-{% set sha256 = "657282d34cacb99f2ea56ae661837029e0af501dc15bec93e30843a80a564b7e" %}
+{% set version = "0.8.22" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 6fb2bf6321188d6ba32c645dde589d6caec7caf42f640d5c698c7c76f6205b96
 
 build:
   noarch: python
@@ -16,25 +15,25 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
-    - discretisedfield ==0.8.13
+    - python >=3.8
+    - discretisedfield ==0.8.15
 
 test:
   imports:
     - micromagneticmodel
   commands:
-    - python -c "import sys; import micromagneticmodel as mm; sys.exit(mm.test())"
+    - python -c "import sys; import micromagneticmodel; sys.exit(micromagneticmodel.test())"
 
 about:
   home: http://ubermag.github.io/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Python domain-specific language for defining micromagnetic models.
+  summary: Python-based domain-specific language for computational magnetism.
   doc_url: http://micromagneticmodel.readthedocs.io
   dev_url: https://github.com/ubermag/micromagneticmodel
 
@@ -42,3 +41,4 @@ extra:
   recipe-maintainers:
     - marijanbeg
     - fangohr
+    - lang-m

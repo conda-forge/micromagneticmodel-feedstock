@@ -5,11 +5,13 @@ Home: http://ubermag.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/micromagneticmodel-feedstock/blob/master/LICENSE.txt)
 
-Summary: Python domain-specific language for defining micromagnetic models.
+Summary: Python-based domain-specific language for computational magnetism.
 
+Development: https://github.com/ubermag/micromagneticmodel
 
+Documentation: http://micromagneticmodel.readthedocs.io
 
 Current build status
 ====================
@@ -117,5 +119,6 @@ Feedstock Maintainers
 =====================
 
 * [@fangohr](https://github.com/fangohr/)
+* [@lang-m](https://github.com/lang-m/)
 * [@marijanbeg](https://github.com/marijanbeg/)
 

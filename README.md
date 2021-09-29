@@ -11,7 +11,7 @@ Summary: Python-based domain-specific language for computational magnetism.
 
 Development: https://github.com/ubermag/micromagneticmodel
 
-Documentation: http://micromagneticmodel.readthedocs.io
+Documentation: https://ubermag.github.io/documentation/micromagneticmodel.html
 
 Current build status
 ====================
@@ -122,4 +122,5 @@ Feedstock Maintainers
 * [@fangohr](https://github.com/fangohr/)
 * [@lang-m](https://github.com/lang-m/)
 * [@marijanbeg](https://github.com/marijanbeg/)
+* [@samjrholt](https://github.com/samjrholt/)
 

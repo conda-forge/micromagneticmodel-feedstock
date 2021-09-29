@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - discretisedfield ==0.11.1
+    - discretisedfield >=0.60.0,<0.61.0
 
 test:
   imports:
@@ -34,7 +34,7 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: Python-based domain-specific language for computational magnetism.
-  doc_url: http://micromagneticmodel.readthedocs.io
+  doc_url: https://ubermag.github.io/documentation/micromagneticmodel.html
   dev_url: https://github.com/ubermag/micromagneticmodel
 
 extra:
@@ -42,3 +42,4 @@ extra:
     - marijanbeg
     - fangohr
     - lang-m
+    - samjrholt

@@ -11,7 +11,7 @@ Summary: Python-based domain-specific language for computational magnetism.
 
 Development: https://github.com/ubermag/micromagneticmodel
 
-Documentation: http://micromagneticmodel.readthedocs.io
+Documentation: https://ubermag.github.io/documentation/micromagneticmodel.html
 
 Current build status
 ====================
@@ -40,6 +40,7 @@ Installing `micromagneticmodel` from the `conda-forge` channel can be achieved b
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `micromagneticmodel` can be installed with:
@@ -110,9 +111,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
@@ -121,4 +122,5 @@ Feedstock Maintainers
 * [@fangohr](https://github.com/fangohr/)
 * [@lang-m](https://github.com/lang-m/)
 * [@marijanbeg](https://github.com/marijanbeg/)
+* [@samjrholt](https://github.com/samjrholt/)
 

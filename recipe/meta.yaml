@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - discretisedfield >=0.61.0,<0.62.0
+    - discretisedfield >=0.62.0
 
 test:
   imports:

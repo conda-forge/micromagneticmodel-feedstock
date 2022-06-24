@@ -1,5 +1,5 @@
 {% set name = "micromagneticmodel" %}
-{% set version = "0.61.1" %}
+{% set version = "0.62.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bca481fe9a528deba378a32ba7ca0a015c84c697bf08859d1382cc617baf5de3
+  sha256: 38a5208cce845e1b843a08f0aa371c186af8ee14ea4a6d4e13d9ffb9f03e0f2c
 
 build:
   noarch: python

@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - discretisedfield >=0.63.0
+    - discretisedfield >=0.64.0
     - ubermagutil >=0.63.0
 
 test:
